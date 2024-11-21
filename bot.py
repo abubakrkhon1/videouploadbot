@@ -2,7 +2,7 @@ import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 # Replace this with your own bot token
-TOKEN = '7923947984:AAGSvLxIvb5Lkx-8NYJeBEzshoaeGgKkMlA'
+TOKEN = process.env.BOT_API
 bot = telebot.TeleBot(TOKEN)
 
 # Dictionary to store user data
