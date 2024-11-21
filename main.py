@@ -38,7 +38,7 @@ def handle_name_class(message):
     )
 
 # Function to handle video submissions
-@bot.message_handler(content_types=['video', 'document', 'animation', 'photo'])
+@bot.message_handler(content_types=['video', 'document', 'animation', 'photo', 'emoji'])
 def handle_video(message):
     # Check if the received file is a valid video
     if message.content_type == 'video':
