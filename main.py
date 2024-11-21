@@ -51,7 +51,7 @@ def handle_video(message):
         bot.send_message(message.chat.id, confirmation_message)
         
         # Forward the video to a channel (replace '@videouploadmira' with your channel username or ID)
-        bot.send_video('@+bTLrdlCExwQ2MmUy', message.video.file_id, caption=f"Video submission:\n{student_info}")
+        bot.send_video('@SISSubmitVidoe', message.video.file_id, caption=f"Video submission:\n{student_info}")
         
         # Restart the bot by invoking the /start flow
         send_welcome(message)
