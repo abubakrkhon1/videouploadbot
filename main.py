@@ -1,8 +1,9 @@
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
+import os
 
 # Replace this with your own bot token
-TOKEN = process.env.BOT_API
+TOKEN = os.getenv('BOT_API')
 bot = telebot.TeleBot(TOKEN)
 
 # Dictionary to store user data
